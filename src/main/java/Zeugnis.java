@@ -30,10 +30,10 @@ public class Zeugnis {
     public String getFachName(int index) {
         if (index < 0 ||index >= MAX_FAECHER) return null;
 
-        return faecher[index].getFachName();
+        return faecher[index].getBezeichnung();
     }
 
     public String printZeugnis() {
-
+        return null;
     }
 }
