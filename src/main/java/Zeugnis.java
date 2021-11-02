@@ -34,6 +34,18 @@ public class Zeugnis {
     }
 
     public String printZeugnis() {
-        return null;
+        StringBuilder out = new StringBuilder("Zeugnis für: ");
+        out.append(schueler.getNameVorname());
+        out.append("\n");
+
+        for (Fach f : faecher) {
+            if (f == null) continue;
+            out.append(" ".repeat(2)).append(f.getBezeichnung()).append("\n");
+            for (int i = 0; i < f.getAnzahlNoten(); i++) {
+                out.append(" ".repeat(4)).append(f.getNotenwert(i)).append("\n");
+            }
+        }
+
+        return out.toString();
     }
 }

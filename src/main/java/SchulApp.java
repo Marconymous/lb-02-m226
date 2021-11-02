@@ -20,5 +20,13 @@ public class SchulApp {
         for (int i = 0; i < 2; i++) {
             System.out.println(z.getFachName(i));
         }
+
+        // Frage 6
+        f = z.getFach(0);
+
+        f.addNote(5f);
+        f.addNote(3.5f);
+
+        System.out.println(z.printZeugnis());
     }
 }

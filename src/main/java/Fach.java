@@ -17,7 +17,7 @@ public class Fach {
     public boolean addNote(float note) {
         if (notenCounter + 1 >= MAX_NOTEN || notenCounter < 0) return false;
 
-        noten[notenCounter] = note;
+        noten[notenCounter++] = note;
         return true;
     }
 
