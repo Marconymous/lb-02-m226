@@ -47,5 +47,5 @@ public class Zeugnis {
         }
 
         return out.toString();
-    }
+    }   
 }
